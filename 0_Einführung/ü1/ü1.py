@@ -57,7 +57,7 @@ E = np.ones(shape=(6, 6))
 print("E")
 print(E)
 
-'''
+''' 
 f) Erstelle eine 4x4 Einheitsmatrix 
 '''
 F = np.eye(4)
