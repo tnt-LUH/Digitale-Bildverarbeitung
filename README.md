@@ -70,6 +70,7 @@ Aufgaben kann eine Kamera benötigt sein.
 Zu jeder Übung gibt es eine Lösungsdatei mit einer
 (von möglicherweise vielen!) Musterlösung. Die Dateien sind mit der
 Bennenung von z.B. `l1.py` gekennzeichnet.
+
 ---
 
 Im folgenden werden die Themenschwerpunkte des Kurses kurz erläutert.
