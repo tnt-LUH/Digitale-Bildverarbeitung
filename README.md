@@ -65,13 +65,15 @@ Diese Aufgaben sollen spannende und praktische Anwendungen demonstrieren
 und aufzeigen, dass die theoretische Lehre der Bildverarbeitung 
 schnell und praktisch implementiert werden kann. Für die Lösung der 
 Aufgaben kann eine Kamera benötigt sein.
-**Action-Übungen** sind mit Dateinamen wie `a1.py` versehen.
+**Action-Übungen** sind mit Dateinamen wie ``a1.py`` versehen.
 
 Zu jeder Übung gibt es eine Lösungsdatei mit einer
 (von möglicherweise vielen!) Musterlösung. Die Dateien sind mit der
-Bennenung von z.B. `l1.py` gekennzeichnet.
+Bennenung von z.B. `l1.py` gekennzeichnet. 
+ 
 
 ---
+
 
 Im folgenden werden die Themenschwerpunkte des Kurses kurz erläutert.
 
