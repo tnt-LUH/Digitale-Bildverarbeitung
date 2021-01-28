@@ -25,6 +25,7 @@ Gez. die Autoren
 
 ## Struktur
 Dieses Repository ist unterteilt in die Themenbereiche
+
  0. Einführung
  1. Grundlagen
  2. Bildbearbeitung
