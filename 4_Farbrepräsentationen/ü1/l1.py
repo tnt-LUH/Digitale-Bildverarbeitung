@@ -57,7 +57,7 @@ difference = np.sum(np.abs(img2 - img3))
 print("Totale Differenz zwischen den Ergebnissen:", difference)
 max_difference = np.max(np.abs(img2 - img3))
 print("Maximale Abweichung pro Pixel/Kanal:", max_difference)
-example_differences = img2[0:10, 0:10] - img3[0:10, 0:10]
+example_differences = img2[0:3, 0:3] - img3[0:3, 0:3]
 print("Beispiel Differenzen:\n", example_differences)
 
 cv2.imshow("ORIGINAL", img)
