@@ -3,7 +3,7 @@
 In dieser Übung wird Quantisierung und Diskretisierung von Bildern betrachtet. 
 
 
-## Aufgabe a) Diskretisierung
+## Aufgabe a) Diskretisierng
 In der Datei ``ü2a.py`` wird ein Bild geladen. Das Bild hat die Größe 1526 x 1600 (Breite x Höhe).
 
 Diskretisieren Sie das Bild mit dem Faktor *k* **ohne** und **mit** Verwendung der Funktion `cv2.resize()`. Dabei kann 
@@ -11,7 +11,7 @@ Diskretisieren Sie das Bild mit dem Faktor *k* **ohne** und **mit** Verwendung d
 dass die Bilder in der gleichen Größe dargestellt werden.
 
 
-## Aufgabe b)
+## Aufgabe b)u
 In der Datei ``ü2b.py`` wird ein Bild geladen. Das Bild ist im BGR-Farbraum repräsentiert und hat eine 8-Bit Quantisierung 
 (Wertebereich {0, ..., 255}. 
 
