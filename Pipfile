@@ -9,6 +9,7 @@ numpy = "*"
 matplotlib = "*"
 scipy = "*"
 opencv-python = "*"
+pyvirtualcam = "*"
 
 [dev-packages]
 
