@@ -34,4 +34,5 @@ Getestet mit Python Versionen:
  
 Gestet auf Betriebssystemen:
  - Windows 10   
+ -OpenSuse (pyvirtualcam funktioniert nicht!)
     

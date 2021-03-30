@@ -7,11 +7,14 @@ import argparse
 import cv2
 import platform
 import numpy as np
+import datetime
 
 DEFAULT_CAMERA = 0
-DEFAULT_MODE = "virtual_cam"  #"virtual_cam"
+DEFAULT_MODE = "virtual_cam"  # "screen"
 DEFAULT_VIDEO = "DEFAULT VIDEO TO SHOW"
 WINDOW_NAME = "Output"
+FRAMERATE = 30
+
 '''
 The following code is to setup the framework
 '''
@@ -31,7 +34,7 @@ args = parser.parse_args()
 # Check if arguments are valid
 available_cameras = list()
 print("Availlable cameras:")
-for i in range(10):
+for i in range(3):
     temp = cv2.VideoCapture(i)
     is_opened = temp.isOpened()
     if is_opened:
@@ -71,18 +74,9 @@ else:
     raise Exception("OS %s not known!" % current_os)
 
 # Define CV algorithms you want to use in the application
-from algorithms import Algorithm
-from algorithms.image_to_gray import ImageToGray
-from algorithms.motion_detector import MotionDetector
-from algorithms.white_balancing import WhiteBalancing
+from algorithms import algorithms
 
-algorithms = dict()
-algorithms["0"] = Algorithm
-algorithms["1"] = ImageToGray
-algorithms["2"] = MotionDetector
-algorithms["3"] = WhiteBalancing
-
-current_algorithm_id = "0"
+current_algorithm_id = sorted(algorithms.keys())[0]
 current_algorithm = algorithms[current_algorithm_id]()
 cv2.setMouseCallback(WINDOW_NAME, current_algorithm.mouse_callback)
 
@@ -96,9 +90,19 @@ print("=== RUN PROCESSING LOOP === ")
 input_source = args.camera if args.camera != -1 else args.video
 print("Using input source", input_source)
 cap = cv2.VideoCapture(input_source)
+last_read = datetime.datetime.now()
+auto_focus = True
+auto_exposure = True
 while True:
+    # Measure time to last read out to avoid to fast readout in videos
+    if datetime.datetime.now() - last_read < datetime.timedelta(milliseconds=int(1000 / FRAMERATE)):
+        continue
+    last_read = datetime.datetime.now()
     # Read, process and show image
     ret, img = cap.read()
+    if not ret and type(input_source) == str:
+        cap = cv2.VideoCapture(input_source)
+        ret, img = cap.read()
     img = current_algorithm.process(img)
     show(img)
     # Check if a new
@@ -111,7 +115,16 @@ while True:
     elif chr(key) in algorithms.keys():
         current_algorithm_id = chr(key)
         current_algorithm = algorithms[current_algorithm_id]()
+        print("Set algorithm to %s selected by key '%s'" % (type(current_algorithm), chr(key)))
         cv2.setMouseCallback(WINDOW_NAME, current_algorithm.mouse_callback)
-    print("You clicked key '%s' (%s)" % (chr(key), key))
+    elif chr(key) == "e" and type(input_source) == int:
+        auto_exposure = not auto_exposure
+        print("Set auto exposure to", int(auto_exposure))
+        cap.set(propId=cv2.CAP_PROP_AUTO_EXPOSURE, value=int(auto_exposure))
+    elif chr(key) == "f" and type(input_source) == int:
+        auto_focus = not auto_focus
+        print("Set auto focus to", int(auto_focus))
+        cap.set(propId=cv2.CAP_PROP_AUTOFOCUS, value=int(auto_focus))
+2
 print("=== FINISHED PROCESSING LOOP AND STOP APPLICATION === ")
 
