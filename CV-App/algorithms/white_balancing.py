@@ -1,7 +1,7 @@
 import cv2
+import numpy as np
 
 from . import Algorithm
-import numpy as np
 
 
 class WhiteBalancing(Algorithm):
