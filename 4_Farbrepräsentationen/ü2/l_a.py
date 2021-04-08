@@ -1,45 +1,34 @@
 import numpy as np
 import cv2
 
-# Hiermit kann die Methode für die Berechnung ausgewählt werden
-METHOD = "MANUELL"  # OpenCV
+camera = cv2.VideoCapture(0)
 
-# Einlesen des Bildes
-filepath = "../../data/flower.jpeg"
-img = cv2.imread(filepath)
+signum = 1
+factor = 0.3
+while True:
+    ''' Aufgabe a) '''
+    ret, bgr = camera.read()
 
-h, w, c = img.shape
-print("Originale Breite:", w)
-print("Originale Höhe:", h)
+    ''' Aufgabe b) '''
+    hsv = cv2.cvtColor(bgr, cv2.COLOR_BGR2HSV)
+    hsv[:, :, 2] = np.round(hsv[:, :, 2] * factor)
+    bgr = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
 
-scales = [4, 8, 13.5]
-images = []
+    ''' Aufgabe c) '''
+    if factor == 0:
+        signum = 1
+    elif factor == 1:
+        signum = -1
+    factor += signum * 0.02
+    factor = min(1, factor)
+    factor = max(0, factor)
 
-for scale in scales:
-    new_w, new_h = round(w / scale), round(h / scale)
+    ''' Visualisierung  '''
+    # Display the resulting frame
+    cv2.imshow('frame', bgr)
+    if 27 == cv2.waitKey(1):  # Taste "q"
+        break
 
-    if METHOD == "OpenCV":
-        new_image = cv2.resize(img, (new_w, new_h))
-        # Frage 1: Welches Interpolationsmethode wird hier verwendet?
-
-    elif METHOD == "MANUELL":
-        new_image = np.zeros((new_h, new_w, c), dtype=np.uint8)
-        for x in range(new_w):
-            for y in range(new_h):
-                x_projected, y_projected = min(w - 1, round(x * scale)), min(h - 1, round(y * scale))
-                new_image[y, x] = img[y_projected, x_projected]
-                # Frage 2: Welches Mapping wird hier verwendet (For- oder Backwardmapping)?
-                # Frage 3: Welches Interpolationsmethode wird hier verwendet?
-
-    else:
-        raise Exception("Da ist wohl ein Fehler unterlaufen!")
-    images.append(new_image)
-
-# Bilder darstellen
-show_w, show_h = 1200, 1200
-img = cv2.resize(img, (show_w, show_h))
-cv2.imshow("Original", img)
-for scale, image in zip(scales, images):
-    image = cv2.resize(image, (show_w, show_h))
-    cv2.imshow("Scale %s" % scale, image)
-cv2.waitKey(0)
+# When everything done, release the capture
+camera.release()
+cv2.destroyAllWindows()
