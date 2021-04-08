@@ -1,4 +1,4 @@
-# Übung 3: Rauschen
+# Übung 1: Rauschen
 
 In der Vorlesung wurden Ihnen einige Bildsensoren vorgestellt. In dieser Übung sollen Sie Ihren eigenen Bildsensor verwenden:
 Ihre Webcam. In dieser Übung sollen Sie erlernen, wie Sie mit OpenCV eine Kamera öffnen und das Bild anzeigen.
