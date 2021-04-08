@@ -75,7 +75,7 @@ Für die Aufgabe stehen die folgenden Operationen zur Verfügung:
     
 Wählen Sie 4 der 6 Operationen und wenden Sie sie auf die das Bild an. Jede Operation darf dabei nur einmal verwendet werden.
 Visualisieren Sie jeden Zwischenschritt.
-Die Aufgabe soll in der Datei `ü2a.py` bearbeitet werden! Die entsprechende Lösung finden Sie in `l2a.py`
+Die Aufgabe soll in der Datei *a.py* bearbeitet werden! Die entsprechende Lösung finden Sie in *l_a.py*.
 
 **Hinweis:** Mehrere Lösungswege sind möglich! 
 
@@ -96,4 +96,4 @@ Für die Bearbeitung können Sie sich verschiedener Filter bedienen. Beispiele d
  - Diverse Richtungsfilter
  - Rangfolgefilter wie Minimum, Maximum, Median
 
-Die Aufgabe soll in der Datei `ü2b.py` bearbeitet werden! Die entsprechende Lösung finden Sie in `l2b.py`
+Die Aufgabe soll in der Datei *b.py* bearbeitet werden! Die entsprechende Lösung finden Sie in *l_b.py*

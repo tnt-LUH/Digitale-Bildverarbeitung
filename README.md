@@ -1,7 +1,6 @@
 ![alt text](./data/tnt_banner.svg)
 
 # Digitale Bildverarbeitung
-[english version below]
 
 Sehr geehrte Studierende,
 
@@ -23,6 +22,8 @@ dass über den Erwerb von Leistungspunkten hinaus geht.
 
 Gez. die Autoren
 
+---
+
 ## Struktur
 Dieses Repository ist unterteilt in die Themenbereiche
 
@@ -37,10 +38,11 @@ welche jeweils mit Übungsaufgaben, Lösungen sowie begleitendem Material
 ausgestattet sind.
 
 Zusätzlich sind die Ordnerstrukturen
- - CV-App
- - data: Daten für die Verarbeitung, z.B. Bilder
- - utilities: Allgemeine Hilfsskripte und Tools
- - Sandkasten: Ort, um eigene Dinge auszuprobieren
+ - *CV-App*: 
+   Pipeline für die Anwendung von BV Videokonferenzen
+ - *data*: Daten für die Verarbeitung, z.B. Bilder
+ - *utilities*: Allgemeine Hilfsskripte und Tools
+ - *Sandkasten*: Ort, um eigene Dinge auszuprobieren
  
 vorhanden. Die **CV-App** nimmt dabei eine besondere Position ein, da
 den Studierenden hier mit einer Interaktiven Appliaktion der praktische
@@ -49,32 +51,16 @@ für fortgeschrittene Programmierübungen gegeben wird, welche hier nicht
 explizit behandelt werden.
 
 ---
-Das Erlernen der Fertigkeiten wird mit zwei Aufgabentypen unterstützt: 
-**Übungen** sowie **Action-Übungen**.
 
-Eine herkömmliche **Übung** bietet den Studierenden eine zu lösende 
-Aufgabe mit einem eindeutig definierten, deterministischem und 
-reproduzierbarem Ergebnis. Diese Struktur soll die Verunsicherung
- in der Lernphase reduzieren, welche durch undefinierte Begriffe 
-oder subjektive Anforderungen in der Bildverarbeitung entstehen können. 
-**Übungen** sind mit Dateinamen wie `ü1.py` versehen.
-
-Die in den **Action-Übungen** zu lösenden Aufgaben zeichnen sich
-durch Interaktion mit dem Studierendem aus. Die Lösung ist daher
-gleichzeitig von Aufgabenstellung sowie vom Studierenden abhängig.
-Diese Aufgaben sollen spannende und praktische Anwendungen demonstrieren
-und aufzeigen, dass die theoretische Lehre der Bildverarbeitung 
-schnell und praktisch implementiert werden kann. Für die Lösung der 
-Aufgaben kann eine Kamera benötigt sein.
-**Action-Übungen** sind mit Dateinamen wie ``a1.py`` versehen.
-
+Das Erlernen der Fertigkeiten aus der Vorlesung wird mit Übungen unterstützt.
+Eine herkömmliche Übung bietet den Studierenden eine oder mehrere zu lösende 
+Aufgaben. Übungen sind in einem eigenen Unterordner wie z.B. **ü1** angelegt. Die Aufgaben sind in
+der **README.md** beschrieben und sollen in der entsprechenden Datei mit Dateinamen wie `a.py` gelößt werden.
 Zu jeder Übung gibt es eine Lösungsdatei mit einer
-(von möglicherweise vielen!) Musterlösung. Die Dateien sind mit der
-Bennenung von z.B. `l1.py` gekennzeichnet. 
- 
+(von möglicherweise vielen!) Musterlösung. Die Lösungen sind mit der
+Bennenung von z.B. `l_a.py` gekennzeichnet. 
 
 ---
-
 
 Im folgenden werden die Themenschwerpunkte des Kurses kurz erläutert.
 
@@ -86,25 +72,70 @@ eingegangen.
 
 Das Kapitel ist für Neulinge in den folgenden Bereichen zu empfehlen:
 
- - Installation Python und/oder PyCharm
- - Programmierung Python
- - OpenCV und Numpy
+ - **Installation Python und/oder PyCharm**
+ - **Programmierung Python**
+ - **OpenCV und Numpy**
 
 ### 1. Grundlagen
+Um mit Methoden der Digitalen Bildverarbeitung zu arbeiten, lohnt sich ein Blick auf die Grundlagen.
+Das Unterverzeichnis *1_Grundlagen* bietet Aufgaben zum Themengebiet "Grundlagen" in der Vorlesung. 
+Dabei sollen ins besondere die Themen
+
+- **Das menschliche visuelle System**
+- **Technische Bilderfassung/Sensoren**
+- **Das Digitale Bild**
+
+mit zusätzlichem Material unterstützt werden.
 
 ### 2. Bildbearbeitung
+In diesem Kapitel werden Ihnen verschiedene Klassen von Operationen und Methoden erläutert und mit Beispielen 
+exemplarisch dargestellt. Die Übungen zeigen Beispiele zu den Themen 
+- **Punktoperationen (Intensitätstransformationen)**
+- **Lokale Operationen (Filterung)**
+- **Globale Operationen**
+- **Geometrische Transformationen**
 
 ### 3. Signalorientierte Bildverarbeitung
 
+Bilder werden üblicherweise als örtlich-/zeitliches Signal betrachtet. In der Digitalen Bildverarbeitung werden Bilder
+häufig auch in anderer Signalform betrachtet, z.B. im Frequenzraum. Die Grundlagen der signalorientierten Bildverarbeitung 
+werden in diesem Kapitel behandeln. Die Aufgaben in diesem Unterverzeichnis geben dazu Informationen und Beispiele zu den Themen
+
+- **Das Bild als Signal**
+- **Grundlagen unitäre Transformation**
+- **Fourier-Transformation**
+- **LSI‐Systeme, Faltung und Fourier‐Transformation**
+- **Abtastung und Rekonstruktion, Abtasttheorem**
+- **Filterung des Bildes**
+- **Unitäre Transformationen: DCT, Hadamard‐, Haar‐, Wavelet‐Transformation**
+- **Bildpyramiden und Multiresolutiondarstellung**
+
 ### 4. Farbrepäsentationen
+Die Wahrnehmung von "Farbe" wird in technischen Anwendungen in verschiedenen Formen dargestellt und codiert. Zu
+den Grundlagen der Farbrepräsentationen werden in diesem Kapitel Aufgaben und Beispiele bereitgestellt. 
+Die Aufgaben behandeln die Themengebiete
+
+- **Additive Subtraktive Farbmischung**
+- **Farbempfinden und technische Repräsentation von Farbe**
+- **Farbmodelle/Farbräume und Konvertierung**
+- **Weißabgleich**
 
 ### 5. Bildanalyse
+Ein Ziel der Digitalen Bildverarbeitung ist die Extrahierung von Informationen aus Bilddaten, um nachfolgende Aufgaben
+zu lösen. In diesem Kapitel werden einige Beispiele und Aufgaben zur Bildanalyse bereitgestellt. Dabei werden die Themen
+
+- **Diskrete Geometrie und Analyse von Binärbildern**
+- **Bildsegmentierung**
+- **Template-Matching und Korrelation**
+- **Hough**
+
+behandelt.
+
+---
 
 ## FAQ, Kommentare und Hinweise
  - Dieses Repository hat keinen Anspruch auf Vollständigkeit
  - Hauptsprache der Kurses ist Deutsch
- - Er wird versucht, Texte und Erläuterungen sowohl in Deutsch als auch 
- Englisch zu bieten
  - Interessierte dürfen eigene Übungen erstellen und per Pull-Request
  in das Repository einpflegen. Vielen Dank für das Engagement!
  - Viel Spaß beim Lernen!

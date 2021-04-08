@@ -10,7 +10,7 @@ zwei Bilder in einer zeitlichen Abfolge aufgenommen hat. Die Bilder sehen Sie in
 
 
 ## Aufgabe a)
-Implementieren sie in der Datei `ü1.py` die folgenden Schritte, um die Bewegungsdetektion zu realisieren.
+Implementieren sie in der Datei *a.py* die folgenden Schritte, um die Bewegungsdetektion zu realisieren.
 
  1. Öffnen Sie die Bilder mit der Funktion `cv2.imread()`
  2. Konvertieren Sie die Bilder in Grauwertbilder mit der Funktion `cv2.cvtColor()`

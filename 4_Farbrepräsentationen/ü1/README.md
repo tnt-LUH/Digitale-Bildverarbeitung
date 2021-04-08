@@ -15,7 +15,7 @@ In der folgenden Abbildung wird der Farbraum visuell dargestellt:
 
 
 ## Aufgabe a)
-In der Datei ``ü1.py`` wird ein Bild geladen. Nach dem Laden befindet sich das Bild
+In der Datei *a.py* wird ein Bild geladen. Nach dem Laden befindet sich das Bild
 im BGR-Farbraum. Konvertieren Sie das Bild manuell und 
 ohne Hilfe von OpenCV in den HSV Farbraum.
 

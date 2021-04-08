@@ -16,7 +16,7 @@ diskreten Kosinus- bzw. Fouriertransformation folgende Schritte durchgeführt we
 
 Wie stark wirkt sich der Parameter `rate` auf die Interpretierbarkeit des Bildes für den Menschen aus?
 
-Die Lösung ist in der Date `l1a.py` zu finden.
+Die Lösung ist in der Date *l_a.py* zu finden.
 
 ## Aufgabe b) Diskrete Kosinus Transformation
 Implementieren Sie eine Funktion `dct(a: np.ndarray)`, welche als input eine zweidimensionale Matrix erhält und 
@@ -27,7 +27,7 @@ auf diese die 2D Diskrete Kosinus Transformation nach
 anwendet und ausgibt. 
 
 Validieren Sie Ihre Funktion, indem Sie die `fft2()` und `ifft2()` Funktion aus Aufgabe a) durch die `dct()` und `idct()` Funktionen ersetzen.
-Die inverse der Transformation ist mit der Funktion `idct(a: np.ndarray)` gegeben, welche bereits in `l2a.py` implementiert ist.
+Die inverse der Transformation ist mit der Funktion `idct(a: np.ndarray)` gegeben, welche bereits in *l_b.py* implementiert ist.
 
  
 

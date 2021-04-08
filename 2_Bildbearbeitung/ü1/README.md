@@ -8,7 +8,7 @@ Helligkeitsausgleich durchgeführt werden, nachdem die mittlere lokale Helligkei
 ![alt text](../../data/text_3.jpg)
 
 ## Aufgabe a)
-In der Datei ``ü1.py`` werden drei Bilder geladen. Führen Sie den Helligkeitsausgleich auf allen Bildern durch und zeigen
+In der Datei *a.py* werden drei Bilder geladen. Führen Sie den Helligkeitsausgleich auf allen Bildern durch und zeigen
 Sie sie an.
 
 

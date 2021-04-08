@@ -1,4 +1,4 @@
-# Action Übung 1:  BGR zu HSV
+# Übung 4:  BGR zu HSV
 
 In dieser Übung wird der HSV Farbraum betrachtet. Die Information der Farbe wird
 durch die drei Werte  

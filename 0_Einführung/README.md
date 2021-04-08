@@ -37,7 +37,7 @@ Github gehosted, um die Aufgaben kontinuierlich weiterentwickeln zu können und 
 neusten Entwicklungsstand zu geben. Weiterhin bietet Github die Möglichkeit, dass Sie aktiv bei der Mitgestaltung dieses
 Kurses beitragen können.
 
-Der Download der Daten kann entweder über **Git** oder die vereinfachte **Download-Funktion** geschehen. Es wird die
+Der Download der Daten kann entweder über **Git** oder die einfache **Download-Funktion** geschehen. Es wird die
 Methode Git empfohlen. Weitere Informationen zu Git finden Sie unter 
 [https://guides.github.com/introduction/git-handbook/](https://guides.github.com/introduction/git-handbook/).
 
@@ -51,7 +51,7 @@ Im folgenden wird der von Ihnen ausgesuchte Pfad als `WORKING_DIRECTORY` beschri
 gespeichert haben, sollte diese README-Datei an der Stelle `WORKING_DIRECTORY\0_Einführung\README.md` liegen.  
 
 **Hinweis:** Sie sind herzlich dazu eingeladen Git *Merge Requests* zu verwenden, um eventuelle Fehler zu korrigieren oder 
-sogar neue Aufgaben zu erstellen.
+neue Aufgaben zu erstellen.
 
 ## Einrichtung einer Virtuellen Umgebung
 Starten Sie PyCharm und erstellen Sie ein neues Projekt. Es wird ein Dialog geöffnet, welcher ähnlich der folgenden 
@@ -69,7 +69,7 @@ Dabei ist
  - **Explorer** eine Projektübersicht, um zwischen den Dateien des Projektes zu wechseln
  - **Editor** ein Fenster, um Dateien zu bearbeiten
  - **Run** das Ausgabefenster eines Python Programms
- - **Terminal** eine interne Kommandozeile, die wie die Betriebssystem eigene Kommandozeile funktioniert
+ - **Terminal** eine interne Kommandozeile
  
 ![alt text](./data/pycharm2.png)
 
