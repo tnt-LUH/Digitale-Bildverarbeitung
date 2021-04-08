@@ -1,14 +1,17 @@
 
 
 class Algorithm:
-
+    """ An abstract class to create custom algorithms """
     def process(self, img):
+        """ Processes the input image"""
         return img
 
     def mouse_callback(self, event, x, y, flags, param):
+        """ Reacts on mouse callbacks """
         return
 
 
+''' Import algorithms to use'''
 from .image_to_gray import ImageToGray
 from .image_to_hue import ImageToHue
 from .motion_detector import MotionDetector
@@ -16,7 +19,7 @@ from .white_balancing import WhiteBalancing
 from .spin import Spin
 from .segmentation_tracker import SegmentationTracker
 
-
+''' Link Algorithms to keys '''
 algorithms = dict()
 algorithms["0"] = Algorithm
 algorithms["1"] = ImageToGray

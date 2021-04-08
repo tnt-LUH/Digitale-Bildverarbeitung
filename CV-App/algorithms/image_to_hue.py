@@ -5,8 +5,8 @@ from . import Algorithm
 
 
 class ImageToHue(Algorithm):
+    """ Normalizes a BGR image with color information"""
     def process(self, img):
-        """ Normalizes a BGR image with color information"""
         channel_sum = np.sum(img.astype(np.float32), axis=2, keepdims=True)
         img_normalized = img.astype(np.float32) * 255 / channel_sum
         img_normalized = img_normalized.astype(np.uint8())

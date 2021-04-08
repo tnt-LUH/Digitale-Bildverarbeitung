@@ -6,7 +6,7 @@ from . import Algorithm
 
 
 class MotionDetector(Algorithm):
-
+    """ Converts a BGR image to grayscale"""
     def __init__(self):
         self.image_count = 0
         self.background = None
@@ -16,7 +16,6 @@ class MotionDetector(Algorithm):
         self.threshold = 50
 
     def process(self, img):
-        """ Converts a BGR image to grayscale"""
         img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         h, w = img_gray.shape
         blurred_img = cv2.resize(img_gray, (int(w/2), int(h/2)), interpolation=cv2.INTER_NEAREST)

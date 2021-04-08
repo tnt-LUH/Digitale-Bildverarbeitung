@@ -8,12 +8,15 @@ class SegmentationTracker(Algorithm):
     """ Tracks a point by re-identify a suitable segmentation  """
 
     def __init__(self):
+        """ Init some values and set seed point to None """
         self.pos = None
-        self.distance_threshold = 60
+        self.distance_threshold = 80
         self.reference_pixel = None
 
     def process(self, img):
-        """  """
+        """
+        Tries to segment a region around the seed point and calculates a new seed point by finding the segments center
+        """
         if self.pos is None:
             result = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
             result = np.stack([result, result, result], axis=2)
@@ -41,7 +44,7 @@ class SegmentationTracker(Algorithm):
         markers = markers + 1
         # Now, mark the region of unknown with zero
         markers[unknown == 255] = 0
-        markers = cv2.watershed(img, markers)  # There are two classes 1 and 2 which describe the object. -1 is background
+        markers = cv2.watershed(img, markers)
 
         try:
             contours, hierarchy = cv2.findContours(((markers == 2) * 1).astype(np.uint8), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
@@ -61,6 +64,7 @@ class SegmentationTracker(Algorithm):
         return result
 
     def mouse_callback(self, event, x, y, flags, param):
+        """ Selects a new seed point"""
         if event == cv2.EVENT_LBUTTONUP:
             self.pos = (x, y)
             self.reference_pixel = None

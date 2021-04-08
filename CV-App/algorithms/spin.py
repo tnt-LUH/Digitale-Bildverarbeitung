@@ -5,14 +5,13 @@ from . import Algorithm
 
 
 class Spin(Algorithm):
-    """ White Balancing """
+    """ Rotates an image """
 
     def __init__(self):
         self.current_angle = 0  # between 0 and 2 pi
         self.anlge_per_image = 360 / 100
 
     def process(self, img):
-        """ White balancing """
         self.current_angle = (self.current_angle + self.anlge_per_image) % 360
         w, h = img.shape[1], img.shape[0]
         image_center = (w / 2, h / 2)

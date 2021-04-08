@@ -84,7 +84,7 @@ print("=== FINISHED INITIALIZING FRAMEWORK === \n\n")
 
 
 '''
-Following code is run the processing
+Following code runs the processing loop
 '''
 print("=== RUN PROCESSING LOOP === ")
 input_source = args.camera if args.camera != -1 else args.video
@@ -125,6 +125,6 @@ while True:
         auto_focus = not auto_focus
         print("Set auto focus to", int(auto_focus))
         cap.set(propId=cv2.CAP_PROP_AUTOFOCUS, value=int(auto_focus))
-2
+
 print("=== FINISHED PROCESSING LOOP AND STOP APPLICATION === ")
 
