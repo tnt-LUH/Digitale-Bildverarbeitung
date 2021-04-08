@@ -1,30 +1,21 @@
-# Übung 2:  Diskretisierung und Quantisierung
+# Übung 3: Rauschen
 
-In dieser Übung wird Quantisierung und Diskretisierung von Bildern betrachtet. 
+In der Vorlesung wurden Ihnen einige Bildsensoren vorgestellt. In dieser Übung sollen Sie Ihren eigenen Bildsensor verwenden:
+Ihre Webcam. In dieser Übung sollen Sie erlernen, wie Sie mit OpenCV eine Kamera öffnen und das Bild anzeigen.
+Daraufhin werden Sie ein technisches Problem bei der Aufnahme von Bilddaten kennenlernen: Das Rauschen.
 
+## Aufgabe a)
+Implementieren Sie in die Datei *a.py* folgende Schritte:
+1. Fffnen Sie Ihre Webcam
+2. Schneiden Sie ein Bildausschnitt mit 50x50 Pixels aus dem Bild aus
+3. Zeigen Sie den Bildausschnitt auf den ganzen Bildschirm vergrößert an
 
-## Aufgabe a) Diskretisierng
-In der Datei *a.py* wird ein Bild geladen. Das Bild hat die Größe 1526 x 1600 (Breite x Höhe).
+Recherchieren Sie im Internet und/oder im Einführungskapitel nach den Funktionen `cv2.VideoCapture()`, `cv2.resize()` 
+und `cv2.inshow()`. Eine Musterlösung finden Sie in der Datei *l_a.py*.
 
-Diskretisieren Sie das Bild mit dem Faktor *k* **ohne** und **mit** Verwendung der Funktion `cv2.resize()`. Dabei kann 
-*k* die Werte 4, 8, und 13.5 annehmen. Zeigen Sie die Bilder für den direkten Vergleich an! Achten Sie dabei darauf,
-dass die Bilder in der gleichen Größe dargestellt werden.
+Versuchen Sie den Inhalt vor der Kamera konstant zu halten. 
 
-
-## Aufgabe b) Quantisierung
-In der Datei *b.py* wird ein Bild geladen. Das Bild ist im BGR-Farbraum repräsentiert und hat eine 8-Bit Quantisierung 
-(Wertebereich {0, ..., 255}. 
-
-Führen Sie folgende Schritte durch:
- 1. Quantisieren Sie das Bild in den Wertebereich {0, ..., 127}
- 2. Quantisieren Sie das Bild aus Schritt 1 in den Wertebereich {0, ..., 3}
- 3. Quantisieren Sie das Bild aus Schritt 2 zurück in den Wertebereich {0, ..., 255}
-
-Zeigen Sie die Bilder aus allen Schritten für den direkten Vergleich an:
- 
- - Wie bewerten Sie die Qualität der Bilder?
- - Was fällt auf?
-
-
-
-
+## Fragen:
+- Bleibt das Bild konstant oder sehen Sie Rauschen?
+- Wenn nein: Worin kann das Rauschen begründet liegen?
+- Wozu kann das Rauschen führen?
