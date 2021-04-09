@@ -19,7 +19,7 @@ Betrachten und separieren Sie zusätzlich den Filterkern
 <img src="https://latex.codecogs.com/svg.image?\bg_white&space;\inline&space;F_C&space;=&space;\begin{bmatrix}-2&space;&&space;-3&space;&&space;-2&space;\\0&space;&&space;0&space;&&space;0&space;\\2&space;&&space;3&space;&&space;2&space;\\\end{bmatrix}&space;&space;" title="\bg_white \inline F_C = \begin{bmatrix}-2 & -3 & -2 \\0 & 0 & 0 \\2 & 3 & 2 \\\end{bmatrix} " />
 </p>
 
-wenn möglich (manuell und in Python) ! Die Lösung findet sich in der Datei *l_a.py*.
+wenn möglich (manuell und in Python)! Die Lösung findet sich in der Datei [l_a.py](l_a.py).
 
 ## Aufgabe b)
 Stellen Sie sich vor, Sie wenden die separierten oder nicht separierten Filterkerne auf ein durchschnittliches Bild an.
