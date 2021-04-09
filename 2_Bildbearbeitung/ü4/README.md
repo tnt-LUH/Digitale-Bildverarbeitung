@@ -8,16 +8,16 @@ Unter Umständen ist ein 2-dimensionaler Filterkern separierbar, d.h. er durch z
 werden.  
 
 Nehmen Sie die bereits separierten Filterkerne
-
+<p align="center">
 <img src="https://latex.codecogs.com/svg.image?\bg_white&space;F_a&space;=&space;\begin{bmatrix}1&space;&&space;4&space;&&space;1&space;\\\end{bmatrix}&space;\quad&space;\text{und}\quad&space;F_b&space;=&space;\begin{bmatrix}&space;-1\\&space;0\\1\end{bmatrix}&space;" title="\bg_white F_a = \begin{bmatrix}1 & 4 & 1 \\\end{bmatrix} \quad \text{und} F_b = \begin{bmatrix} -1\\ 0\\1\end{bmatrix} " />
-
+</p>
 und erstellen den ursprünglichen Filterken, sowohl "von Hand" als auch in einem Python Skript.
 
 
 Betrachten und separieren Sie zusätzlich den Filterkern 
-
+<p align="center">
 <img src="https://latex.codecogs.com/svg.image?\bg_white&space;\inline&space;F_C&space;=&space;\begin{bmatrix}-2&space;&&space;-3&space;&&space;-2&space;\\0&space;&&space;0&space;&&space;0&space;\\2&space;&&space;3&space;&&space;2&space;\\\end{bmatrix}&space;&space;" title="\bg_white \inline F_C = \begin{bmatrix}-2 & -3 & -2 \\0 & 0 & 0 \\2 & 3 & 2 \\\end{bmatrix} " />
-
+</p>
 wenn möglich (manuell und in Python)! Die Lösung findet sich in der Datei *l_a.py*.
 
 ## Aufgabe b)
