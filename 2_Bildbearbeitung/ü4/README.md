@@ -7,6 +7,29 @@ Eingangsbild angewendet wird. In dieser Übung sollen Aufgaben mit Filterkernen 
 Unter Umständen ist ein 2-dimensionaler Filterkern separierbar, d.h. er durch zwei 1-dimensonale Filterkerne dargestellt
 werden.  
 
-<img src="https://latex.codecogs.com/svg.image?\bg_white&space;F_a&space;=&space;\begin{bmatrix}1&space;&&space;4&space;&&space;1&space;\\\end{bmatrix}&space;\quad&space;\text{und}&space;F_b&space;=&space;\begin{bmatrix}&space;-1\\&space;0\\1\end{bmatrix}&space;" title="\bg_white F_a = \begin{bmatrix}1 & 4 & 1 \\\end{bmatrix} \quad \text{und} F_b = \begin{bmatrix} -1\\ 0\\1\end{bmatrix} " />
+Nehmen Sie die bereits separierten Filterkerne
 
-![](https://latex.codecogs.com/svg.image?%5Cbg_blue%20F_a%20=%20%5Cbegin%7Bbmatrix%7D1%20&%204%20&%201%20%5C%5C%5Cend%7Bbmatrix%7D%20%5Cquad%20%5Ctext%7Bund%7D%20F_b%20=%20%5Cbegin%7Bbmatrix%7D%20-1%5C%5C%200%5C%5C1%5Cend%7Bbmatrix%7D%20)
+<img src="https://latex.codecogs.com/svg.image?\bg_white&space;F_a&space;=&space;\begin{bmatrix}1&space;&&space;4&space;&&space;1&space;\\\end{bmatrix}&space;\quad&space;\text{und}\quad&space;F_b&space;=&space;\begin{bmatrix}&space;-1\\&space;0\\1\end{bmatrix}&space;" title="\bg_white F_a = \begin{bmatrix}1 & 4 & 1 \\\end{bmatrix} \quad \text{und} F_b = \begin{bmatrix} -1\\ 0\\1\end{bmatrix} " />
+
+und erstellen den ursprünglichen Filterken, sowohl "von Hand" als auch in einem Python Skript.
+
+
+Betrachten und separieren Sie zusätzlich den Filterkern 
+
+<img src="https://latex.codecogs.com/svg.image?\bg_white&space;\inline&space;F_C&space;=&space;\begin{bmatrix}-2&space;&&space;-3&space;&&space;-2&space;\\0&space;&&space;0&space;&&space;0&space;\\2&space;&&space;3&space;&&space;2&space;\\\end{bmatrix}&space;&space;" title="\bg_white \inline F_C = \begin{bmatrix}-2 & -3 & -2 \\0 & 0 & 0 \\2 & 3 & 2 \\\end{bmatrix} " />
+
+wenn möglich (manuell und in Python)! Die Lösung findet sich in der Datei *l_a.py*.
+
+## Aufgabe b)
+Stellen Sie sich vor, Sie wenden die separierten oder nicht separierten Filterkerne auf ein durchschnittliches Bild an.
+Wie viele Rechenoperationen pro Pixel führen Sie im Durchschnitt pro Pixel aus, wenn sie
+
+ - einen separierten 3x3 Filterkern
+ - einen nicht separierten 3x3 Filterkern 
+ 
+ verwenden. Die Musterlösung befindet sich in der Datei *l_b.py*.
+ 
+## Aufgabe c) 
+Laden Sie ein beliebiges Bild ein und verwenden Sie die OpenCV-Methode *cv2.imfilter()* um Schärfefilter, Mittelwert-Filter und
+Kantenfilter auf das Bild anzuwenden. Die Musterlösung befindet sich in der Datei *l_c.py*.
+
