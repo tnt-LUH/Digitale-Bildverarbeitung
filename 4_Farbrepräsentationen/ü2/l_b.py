@@ -13,6 +13,15 @@ while True:
     hsv[:, :, 2] = np.round(hsv[:, :, 2] * factor)
     bgr = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
 
+    ''' Aufgabe b) '''
+    if factor == 0:
+        signum = 1
+    elif factor == 1:
+        signum = -1
+    factor += signum * 0.02
+    factor = min(1, factor)
+    factor = max(0, factor)
+
     ''' Visualisierung  '''
     # Display the resulting frame
     cv2.imshow('frame', bgr)
