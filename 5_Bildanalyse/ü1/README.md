@@ -10,7 +10,7 @@ zwei Bilder in einer zeitlichen Abfolge aufgenommen hat. Die Bilder sehen Sie in
 
 
 ## Aufgabe a)
-Implementieren sie in der Datei *a.py* die folgenden Schritte, um die Bewegungsdetektion zu realisieren.
+Implementieren sie in der Datei [a.py](a.py) die folgenden Schritte, um die Bewegungsdetektion zu realisieren.
 
  1. Öffnen Sie die Bilder mit der Funktion `cv2.imread()`
  2. Konvertieren Sie die Bilder in Grauwertbilder mit der Funktion `cv2.cvtColor()`
@@ -22,7 +22,7 @@ Implementieren sie in der Datei *a.py* die folgenden Schritte, um die Bewegungsd
  4. Stellen Sie das Differenzbild mithilfe von `cv2.imshow()` dar
  5 Setzen Sie alle Pixel mit Intensität kleiner 0.5 auf 0 und zeigen Sie das resultierende Bild an
   
-
+Die Musterlösung findet sich unter [l_a.py](l_a.py).
 
 
 
