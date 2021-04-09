@@ -28,9 +28,9 @@ Wie viele Rechenoperationen pro Pixel führen Sie im Durchschnitt pro Pixel aus,
  - einen separierten 3x3 Filterkern
  - einen nicht separierten 3x3 Filterkern 
  
- verwenden. Die Musterlösung befindet sich in der Datei l_b.py.
+ verwenden. Die Musterlösung befindet sich in der Datei [l_b.py](l_c.py).
  
 ## Aufgabe c) 
 Laden Sie ein beliebiges Bild ein und verwenden Sie die OpenCV-Methode *cv2.imfilter()* um Schärfefilter, Mittelwert-Filter und
-Kantenfilter auf das Bild anzuwenden. Die Musterlösung befindet sich in der Datei *l_c.py*.
+Kantenfilter auf das Bild anzuwenden. Die Musterlösung befindet sich in der Datei [l_c.py](l_c.py).
 
