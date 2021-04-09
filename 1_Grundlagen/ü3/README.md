@@ -1,4 +1,4 @@
-# Übung 3:  Diskretisierung und Quantisierung
+# Übung 3: Diskretisierung und Quantisierung
 
 In dieser Übung wird die Quantisierung und Diskretisierung von Bildern betrachtet. In dn folgenden Abbildungen sind beide
 Methoden visualisiert.

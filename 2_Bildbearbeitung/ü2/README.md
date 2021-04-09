@@ -75,15 +75,15 @@ Für die Aufgabe stehen die folgenden Operationen zur Verfügung:
     
 Wählen Sie 4 der 6 Operationen und wenden Sie sie auf die das Bild an. Jede Operation darf dabei nur einmal verwendet werden.
 Visualisieren Sie jeden Zwischenschritt.
-Die Aufgabe soll in der Datei *a.py* bearbeitet werden! Die entsprechende Lösung finden Sie in *l_a.py*.
+Die Aufgabe soll in der Datei [a.py](a.py) bearbeitet werden! Die entsprechende Lösung finden Sie in [l_a.py](l_a.py).
 
 **Hinweis:** Mehrere Lösungswege sind möglich! 
 
 
 ## Aufgabe b)
-Gegeben ist das Bild *edge_01.png*. Es zeigt zwei aneinander grenzende graue Flächen die mit Rauschen
+Gegeben ist das Bild [edge_01.png](data/edge_01.png). Es zeigt zwei aneinander grenzende graue Flächen die mit Rauschen
 versetzt sind. Ziel ist es, das Bild so zu filtern, dass die Kante als weichgezeichnete Linie auf
-schwarzem Untergrund resultiert, wie in Bild *edge_02.png* beispielhaft dargestellt ist.
+schwarzem Untergrund resultiert, wie in Bild [edge_02.png](data/edge_02.png) beispielhaft dargestellt ist.
 
 *edge_01.png*:  
 ![](./data/edge_01.png)
@@ -96,4 +96,4 @@ Für die Bearbeitung können Sie sich verschiedener Filter bedienen. Beispiele d
  - Diverse Richtungsfilter
  - Rangfolgefilter wie Minimum, Maximum, Median
 
-Die Aufgabe soll in der Datei *b.py* bearbeitet werden! Die entsprechende Lösung finden Sie in *l_b.py*
+Die Aufgabe soll in der Datei [b.py](b.py) bearbeitet werden! Die entsprechende Lösung finden Sie in [l_b.py](l_b.py).
