@@ -28,9 +28,15 @@ Wie viele Rechenoperationen pro Pixel führen Sie im Durchschnitt pro Pixel aus,
  - einen separierten 3x3 Filterkern
  - einen nicht separierten 3x3 Filterkern 
  
- verwenden. Die Musterlösung befindet sich in der Datei [l_b.py](l_c.py).
+ verwenden. Die Musterlösung befindet sich in der Datei [l_b.md](l_b.md).
  
 ## Aufgabe c) 
-Laden Sie ein beliebiges Bild ein und verwenden Sie die OpenCV-Methode *cv2.imfilter()* um Schärfefilter, Mittelwert-Filter und
+Laden Sie ein beliebiges Bild ein und verwenden Sie die OpenCV-Methode *cv2.filter2D()* um Schärfefilter, Mittelwert-Filter und
 Kantenfilter auf das Bild anzuwenden. Die Musterlösung befindet sich in der Datei [l_c.py](l_c.py).
 
+## Aufgabe d) 
+Modifizieren Sie die Aufgabe c), indem Sie nur den Mittelwert-Filter verwenden und diesen vergrößern. Verwenden Sie 
+verschiedene Boundary Optionen durch das Argument *borderType* in der Funktion *cv2.filter2D()* und betrachten Sie das
+Ergebnis. Vergleichen Sie die verschiedenen Optionen *cv2.BORDER_REFLECT*, *cv2.BORDER_REPLICATE* und *cv2.BORDER_CONSTANT*.
+Visualisieren Sie weiterhin die Optionen, indem Sie einen Rand mit der Funktion *cv2.copyMakeBorder()* zu dem Bild
+hinzufügen. Die Musterlösung befindet sich in der Datei [l_d.py](l_d.py).
