@@ -16,7 +16,7 @@ diskreten Kosinus- bzw. Fouriertransformation folgende Schritte durchgeführt we
 
 Wie stark wirkt sich der Parameter `rate` auf die Interpretierbarkeit des Bildes für den Menschen aus?
 
-Die Lösung ist in der Date *l_a.py* zu finden.
+Die Lösung ist in der Date [l_a.py](l_a.py) zu finden.
 
 ## Aufgabe b) Diskrete Kosinus Transformation
 Implementieren Sie eine Funktion `dct(a: np.ndarray)`, welche als input eine zweidimensionale Matrix erhält und 
