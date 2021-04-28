@@ -11,9 +11,12 @@ while True:
     ret, frame = cap.read()
 
     if mode == "LUMINANZ":
+        # Farbinformationen entfernen
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     elif mode == "CHROMINANZ":
-        frame = frame.astype(np.float32) / np.sum(frame, keepdims=True, axis=2)
+        # Normalisieren: p_r / (p_r + p_g + p_b), p_g / (p_r + p_g + p_b), p_b / (p_r + p_g + p_b)
+        pixel_sum = np.sum(frame, keepdims=True, axis=2)
+        frame = frame.astype(np.float32) / pixel_sum
     else:
         raise Exception("FALSCHER MODE!!!")
 
