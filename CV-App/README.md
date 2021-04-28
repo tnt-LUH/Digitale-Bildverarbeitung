@@ -137,7 +137,7 @@ Hardware:
 Getestet mit Python Versionen:
  - 3.6
  
-Gestet auf Betriebssystemen:
+Getestet auf Betriebssystemen:
  - Windows 10   
  - OpenSuse (pyvirtualcam funktioniert nicht!)
     
