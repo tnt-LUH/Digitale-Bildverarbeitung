@@ -18,7 +18,7 @@ Die Lösung finden Sie in der Datei [l_a.py](l_a.py).
 
 ## Aufgabe b)
 Starten Sie das Program [b.py](b.py) um ein verrauschtes Bild zu erhalten und filtern Sie es 
-mit der OpenCV-Filterfunktion *cv2.medianBlur(). Führen Sie die Filterung mit den Filtergrößen: 3x3, 5x5,
+mit der OpenCV-Filterfunktion *cv2.medianBlur()*. Führen Sie die Filterung mit den Filtergrößen: 3x3, 5x5,
 9x9. Vergleichen Sie die Ergebnisse durch Visualisierung des Ergebnisses mit *cv2.imshow()*.
 
 Die Lösung finden Sie in der Datei [l_b.py](l_b.py).
