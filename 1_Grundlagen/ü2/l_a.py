@@ -10,9 +10,9 @@ window_name = "Ergebnis mit %s" % mode
 while True:
     ret, frame = cap.read()
 
-    if mode == "CHROMINANZ":
+    if mode == "LUMINANZ":
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    elif mode == "LUMINANZ":
+    elif mode == "CHROMINANZ":
         frame = frame.astype(np.float32) / np.sum(frame, keepdims=True, axis=2)
     else:
         raise Exception("FALSCHER MODE!!!")
