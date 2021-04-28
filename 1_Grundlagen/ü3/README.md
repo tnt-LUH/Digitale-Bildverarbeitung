@@ -9,7 +9,7 @@ Quantisierung | Diskretisierung
 [Link zum Bild](https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Quantized.signal.svg/2880px-Quantized.signal.svg.png) | [Link zum Bild](https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Zeroorderhold.signal.svg/2880px-Zeroorderhold.signal.svg.png)
 
 
-## Aufgabe a) Diskretisierng
+## Aufgabe a) Diskretisierung
 In der Datei [a.py](a.py) wird ein Bild geladen. Das Bild hat die Größe 1526 x 1600 (Breite x Höhe).
 
 Diskretisieren Sie das Bild mit dem Faktor *k* **ohne** und **mit** Verwendung der Funktion `cv2.resize()`. Dabei kann 
