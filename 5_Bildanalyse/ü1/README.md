@@ -5,8 +5,15 @@ wie z.B. Lichtsteuerungen oder Alarmsysteme gefertigt werden.
 
 Gegeben ist eine statische Kamera, welche 
 zwei Bilder in einer zeitlichen Abfolge aufgenommen hat. Die Bilder sehen Sie in den folgenden Abbildungen: 
-![alt text](../../data/surv_01.png)
-![alt text](../../data/surv_02.png)
+
+
+<p align="center">
+<img src="../../data/surv_01.png" />
+</p>
+<p align="center">
+<img src="../../data/surv_02.png" />
+</p>
+
 
 
 ## Aufgabe a)
