@@ -11,14 +11,16 @@ In dieser Übung werden einige Beispiele für lokale Bildoperationen behandelt. 
 verwendet.
 
 ## Aufgabe a)
-Das Bild zeigt ***I_in*** zwei sich schneidende Linien { eine horizontalen und eine vertikale { auf hellem
-Hintergrund (außerhalb des eingezeichneten Rasters sind die Flachen wie angedeutet storungsfrei
-fortgefuhrt). Es soll nun die Horizontale extrahiert und in binarer Form dargestellt werden, so dass
+Das Bild zeigt ***I_in*** zwei sich schneidende Linien (eine horizontalen und eine vertikale) auf hellem
+Hintergrund (außerhalb des eingezeichneten Rasters sind die Flächen wie angedeutet störungsfrei
+fortgeführt). Es soll nun die Horizontale extrahiert und in binärer Form dargestellt werden, so dass
 sich das Binärbild ***I_out*** ergibt. Im folgenden sind 
 die Bilder visualisiert und als Matrix dargestellt. 
 
+<p align="center">
+<img src="./data/cross1.png" />
+</p>
 
-![](./data/cross1.png) 
 ```python
  I_in = [
     [200, 200, 100, 200, 200],
@@ -29,7 +31,10 @@ die Bilder visualisiert und als Matrix dargestellt.
  ]
 ```
 
-![](./data/cross2.png)
+<p align="center">
+<img src="./data/cross2.png" />
+</p>
+
 ```python
  I_out = [
     [  0,   0,   0,   0,   0],
@@ -86,10 +91,15 @@ versetzt sind. Ziel ist es, das Bild so zu filtern, dass die Kante als weichgeze
 schwarzem Untergrund resultiert, wie in Bild [edge_02.png](data/edge_02.png) beispielhaft dargestellt ist.
 
 *edge_01.png*:  
-![](./data/edge_01.png)
+
+<p align="center">
+<img src="./data/edge_01.png" />
+</p>
 
 *edge_02.png*:  
-![](./data/edge_02.png) 
+<p align="center">
+<img src="./data/edge_02.png" />
+</p>
 
 Für die Bearbeitung können Sie sich verschiedener Filter bedienen. Beispiele dafür können sein
  - Hochpass, Tiefpass, Bandpass
