@@ -17,7 +17,7 @@ Zusätzliche Informationen über die Implementierung in OpenCV können Sie hier 
 
 ## Aufgabe a)
 Eine häufig verwendete Transformation ist die Skalierung, Diese sollen Sie nun implementieren. Arbeiten Sie dazu die 
-Fragen bzw. Teilschritte in *b.py* ab. Die entsprechende Lösung finden Sie in *l_b.py*.
+Fragen bzw. Teilschritte in *a.py* ab. Die entsprechende Lösung finden Sie in *l_a.py*.
 
 ## Aufgabe b)
 
