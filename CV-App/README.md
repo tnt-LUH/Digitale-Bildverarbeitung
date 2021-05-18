@@ -55,7 +55,8 @@ Mit den Tasten **f** und **e** können Sie den Auto**f**okus bzw. Auto**e**xposu
 
 ## Eigene CV Algorithmen
 Für die Implementierung eigener Algorithmen sind nur Dateien in dem Unterverzeichnis *algorithms* notwendig. Öffnen 
-Sie sich in das Verzeichnis und lesen die folgenden Abschnitte
+Sie sich in das Verzeichnis und lesen die folgenden Abschnitte. Nachdem Sie die Abschnitte gelesen haben können Sie die Übungsaufgabe
+in der Datei [exercise.md](./exercise.md) bearbeiten. 
  
 ### Eigenen "Algorithm" erstellen
 Sie können einen eigenen Algorithmus erstellen, in dem Sie ein neues Skript in dem Ordner *algorithms* erstellen. Das 
