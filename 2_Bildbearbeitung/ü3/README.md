@@ -36,15 +36,16 @@ Betrachten Sie das folgende Eingangsbild sowie die daraus resultierenden Ausgang
 
 Gebeben sind folgende Transformationsforschriften:
 
-```python
- I_in = [
-    [200, 200, 100, 200, 200],
-    [200, 200, 100, 200, 200],
-    [100, 100, 100, 100, 100],
-    [200, 200, 100, 200, 200],
-    [200, 200, 100, 200, 200],
- ]
-```
+<p align="center">
+<img src="https://latex.codecogs.com/svg.image?T(p)&space;=&space;\begin{pmatrix}cos(\pi&space;/&space;4)&space;&&space;&space;sin(\pi&space;/&space;4)\\-sin(\pi&space;/&space;4)&&space;&space;cos(\pi&space;/&space;4)\\\end{pmatrix}&space;p" title="T(p) = \begin{pmatrix}cos(\pi / 4) & sin(\pi / 4)\\-sin(\pi / 4)& cos(\pi / 4)\\\end{pmatrix} p" />
+</p>
+
+<p align="center">
+<img src="https://latex.codecogs.com/svg.image?T(p)&space;=&space;\begin{pmatrix}cos(\pi&space;/&space;4)&space;&&space;&space;sin(\pi&space;/&space;4)\\-sin(\pi&space;/&space;4)&&space;&space;cos(\pi&space;/&space;4)\\\end{pmatrix}&space;(p&space;-&space;c)&space;&plus;&space;c" title="T(p) = \begin{pmatrix}cos(\pi / 4) & sin(\pi / 4)\\-sin(\pi / 4)& cos(\pi / 4)\\\end{pmatrix} (p - c) + c" />
+</p>
+
+<p align="center">
+<img src="https://latex.codecogs.com/svg.image?T(p)&space;=&space;\begin{pmatrix}1&space;&&space;&space;0.8&space;\\0&space;&&space;&space;1&space;\\\end{pmatrix}&space;(p&space;-&space;c)&space;&plus;&space;c" title="T(p) = \begin{pmatrix}1 & 0.8 \\0 & 1 \\\end{pmatrix} (p - c) + c" /></p>
 
 Wenden Sie die Transformationen in der Datei [b.py](b.py) auf das Eingangsbild an und finden Sie so heraus, welche
 Transformation zu welchem Ausgangsbild gehört. Die Lösung findet sich in der Datei [l_b.py](l_b.py).  
