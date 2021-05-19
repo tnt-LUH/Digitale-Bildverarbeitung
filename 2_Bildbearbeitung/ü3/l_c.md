@@ -1,6 +1,6 @@
 # Lösung Aufgabe c)
 
-## Wie kann man sich die verschiedenen anen Transformationsmatrizen herleiten?
+## Wie kann man sich die verschiedenen affnen Transformationsmatrizen herleiten?
 Für den Fall das die Abbildung linear ist, muss die Abbildung lediglich auf den Basisbildern
 bestimmt werden. Zum Beispiel für die Basis `(1, 0)` und `(0, 1)` berechnet man die transformierten
 Vektoren v1 und v2. Dann ist die Transformationsmatrix gegeben durch `T(p) = (v1, v2) p`. Bei
