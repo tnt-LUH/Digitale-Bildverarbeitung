@@ -52,5 +52,6 @@ def scale(img, s_x, s_y):
 
 ''' Ausgabe des Bildes '''
 new_img = scale(img, 2, 2)
-cv2.imshow('img', new_img)
+cv2.imshow('new_img', new_img)
+cv2.imshow('img', img)
 cv2.waitKey(0)
