@@ -27,7 +27,7 @@ edge = [
     [1, 1, 1],
     [1, 1, 1]
 ]
-edge = np.asarray(edge) /  9
+edge = np.asarray(edge) / 9
 I_in = cv2.filter2D(I_in, cv2.CV_64F, edge, borderType=cv2.BORDER_REPLICATE)
 I_in = I_in / np.max(I_in)
 cv2.imshow("Bild Schritt 3", I_in)
