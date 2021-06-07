@@ -3,7 +3,7 @@
 In dieser Übung soll die Fouriertransformation betrachtet werden.
 
 ## Aufgabe a) Rauschen im Orts- und Frequenzbereich
-Um den Umgang mit Orts- und Frequenzbereich in Matlab zu verdeutlichen und die Grundlage
+Um den Umgang mit Orts- und Frequenzbereich in Python zu verdeutlichen und die Grundlage
 für die Folgeaufgaben zu stellen, soll ein Programm geschrieben werden, das die folgenden Schritte
 durchführt:
 
