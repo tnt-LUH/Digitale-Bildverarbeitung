@@ -25,7 +25,7 @@ Die Lösung findet sich in der Datei [l_a.py](l_a.py).
 ## Aufgabe b)
 Modifizieren Sie Aufgabe a) so, dass die Helligkeit zyklisch zwischen 0% und 100%
 variiert.  
-Die Lösung findet sich in der Datei [l_a.py](l_b.py).
+Die Lösung findet sich in der Datei [l_b.py](l_b.py).
 
 
 
