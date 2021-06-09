@@ -33,6 +33,6 @@ Die inverse der Transformation ist mit der Funktion `idct(a: np.ndarray)` gegebe
 
 ## Aufgabe c) Fragen
 - Wie kann die Reduzierung der Fourier-Koeffizienten für eine Komprimierung genutzt werden?
-- Was versteht man undter diskreter Kosinustransformation und was ist der wesentliche Unterschied zur DFT?
+- Was versteht man unter diskreter Kosinustransformation und was ist der wesentliche Unterschied zur DFT?
 - Welchen Vorteil bietet die DCT gegenüber der FFT in der Praxis?
 
