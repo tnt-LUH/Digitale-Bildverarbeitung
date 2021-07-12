@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-white_balancing_factor = np.asarray([[[0.8, 0.9, 0.95]]])
+white_balancing_factor = np.asarray([[[0.5, 0.3, 0.95]]])
 
 cap = cv2.VideoCapture(0)
 
