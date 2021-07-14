@@ -1,4 +1,4 @@
-# Übung 4: Forward-Mapping / Backward-Mapping
+# Übung 6: Forward-Mapping / Backward-Mapping
 
 In dieser Übung wird das *Forward-Mapping* und das *Backward-Mapping* bei geometrischen Transformationen betrachtet.
 Sie interessieren Sich für den Wert des Pixels an der Stelle **(x=12, y=38)** des Bildes
