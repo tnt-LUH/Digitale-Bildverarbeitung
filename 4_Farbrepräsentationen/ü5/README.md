@@ -22,7 +22,7 @@ Erstellen Sie für das Bild
 
 ![](./data/1.png)
 
-einen Kettencode! Beginnen Sie mit dem Pixel oben links und dem Wert 0. 
+einen Kettencode! Beginnen Sie mit dem weißen Pixel oben links und dem Wert 0. 
 
 ## Aufgabe b) Kettencode
 
@@ -41,3 +41,5 @@ einen differenziellen Kettencode! Beginnen Sie mit dem Pixel oben links und dem 
 Erstellen Sie das Bild für den differentiellen Kettencode
 
 ```[-2 -2 2 -3 1 1 1 -2 -2 0 1 -1 0 -2 0 -1 1 2 -2 0 -1 -1]```
+
+Nutzen Sie als Startrichtung die Richtung 0 nach Definition des Kettencodes.
