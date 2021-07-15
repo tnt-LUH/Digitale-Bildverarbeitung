@@ -1,4 +1,4 @@
-# Übung 4: Kettencode
+# Übung 5: Kettencode
 
 Eine Variante für die Abbildung von Konturen is der Kettencode. Im folgenden sollten Bilder in den Kettencode codiert und
 Kettencodes in Konturen decodiert werden.
