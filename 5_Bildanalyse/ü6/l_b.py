@@ -1,6 +1,6 @@
 import numpy as np
 
-n = -1
-m = 4
+n = 4
+m = -1
 
 print("%s * x + %s" % (n, m))
