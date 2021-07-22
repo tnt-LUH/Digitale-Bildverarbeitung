@@ -1,6 +1,6 @@
 # Übung 7: Interpolation
 
-In dieser Übung wird die *Nächste nachbar (Nearest Neighbour) Interpolation* und die *Bilineare Interpolation* 
+In dieser Übung wird die *Nächste Nachbar (Nearest Neighbour) Interpolation* und die *Bilineare Interpolation* 
 bei geometrischen Transformationen betrachtet.
 
 Für diese Aufgabe haben Sie ein Bild bestehend aus vier Pixelwerten I_xy:
@@ -13,9 +13,8 @@ Für diese Aufgabe haben Sie ein Bild bestehend aus vier Pixelwerten I_xy:
 
 ## a) Interpolation beim Backward Mapping
 Sie transformieren das Bild mithilfe der Transformationsvorschrift **T** beziehungsweise der dazugehörigen inversen 
-Transformationsvorschrift mithilfe des Backward-Mappings. Die ursprüngliche Position I_xy auf dem Eingangsbild des Pixels I'_00 wird durch die die Inverse
-Transformation gegeben. Berechnen Sie den Wert des Pixels I'_00 mithilfe der Bilinearen Transformation **UND** der
-Nearest Neighbour Mehthode, wenn wenn die ursprüngliche Postition I_xy an den Koordinaten
+Transformationsvorschrift mithilfe des Backward-Mappings. Die ursprüngliche Position I_xy auf dem Eingangsbild des Pixels I'_00 auf dem Ausgangsbild wird durch die die Inverse
+Transformation gegeben. Berechnen Sie den Wert des Pixels I'_00 mithilfe der *Nächste Nachbar (Nearest Neighbour) Interpolation* und der *Bilineare Interpolation*, wenn die ursprüngliche Postition I_xy an den Koordinaten
 
  - (x=0.3 | y=0.8) 
  - (x=0 | y=1) 
@@ -35,8 +34,7 @@ Pixel wie folgt:
  - I_01 = 3: (x=0.5 | y=1.5)
  - I_11 = 4: (x=1.5 | y=1.5)
    
-Interpolieren Sie die Werte auf dem Zielbild mithilfe der Bilinearen Transformation **UND** der
-Nearest Neighbour Mehthode für die folgenden Pixel:
+Interpolieren Sie die Werte auf dem Zielbild mithilfe der *Nächste Nachbar (Nearest Neighbour) Interpolation* und der *Bilineare Interpolation* für die folgenden Pixel:
 
  - I'_11
  - I'_00
