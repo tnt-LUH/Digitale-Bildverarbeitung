@@ -78,6 +78,7 @@ from algorithms import algorithms
 
 current_algorithm_id = sorted(algorithms.keys())[0]
 current_algorithm = algorithms[current_algorithm_id]()
+cv2.namedWindow(WINDOW_NAME)
 cv2.setMouseCallback(WINDOW_NAME, current_algorithm.mouse_callback)
 
 print("=== FINISHED INITIALIZING FRAMEWORK === \n\n")
