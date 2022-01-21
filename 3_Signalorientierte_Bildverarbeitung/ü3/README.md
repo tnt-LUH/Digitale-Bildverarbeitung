@@ -26,3 +26,15 @@ In der Datei [b.py](b.py) werden zwei Bilder geladen. Transformieren Sie sie in 
 Winkel und Amplituden. Stellen Sie die Bilder vor und nach dem Tausch dar!
 
 Die Musterlösung befindet sich in der Datei [l_b.py](l_b.py).
+
+## Aufgabe c) Tiefpassfilter
+
+In der Datei [c.py](c.py) wird ein Bild eines Teppichs geladen. Der Teppich hat Fehler in den Maschen, die Sie finden möchten.
+Um die Fehler besser finden zu können, möchten Sie das Bild mithilfe der Fourier-Transformation optisch anpassen.
+
+Transformieren Sie das Bild in den Frequenzbereich und löschen Sie verschiedene hochfrequente und/oder niederfrequente Anteile.
+Transformieren Sie das Spektrum darauf wieder in den Ortsbereich und stellen die Bilder dar!
+
+Welche Frequenzen scheinen für die Aufgabe interessanter zu sein?
+
+Die Musterlösung befindet sich in der Datei [l_c.py](l_c.py).
