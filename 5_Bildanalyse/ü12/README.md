@@ -4,7 +4,9 @@ Sie haben folgendes Bild gegeben und sollen den Kamera-Mann und seine Kamera mö
 segmentieren:
 ![](../../data/cameraman.png)
 
-Hierzu soll das Verfahren von Otsu verwendet werden.
+Hierzu soll das Verfahren von Otsu verwendet werden. 
+
+Quelle: [https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4310076](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4310076)
 
 ## a) Otsu
 
