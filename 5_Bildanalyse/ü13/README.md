@@ -28,7 +28,7 @@ Eine Lösung befindet sich in Datei [l_a.py](l_a.py).
 
 Betrachten Sie das folgende Bild und die dazugehörige Instanzsegmentierung:
 
-| Binärbild | Instanz-segmentiertes Bild |
+| RGB-Bild | Instanz-segmentiertes Bild |
 | --- | --- |
 | ![](data/students_checklist.jpg) | ![](data/students_checklist_result.jpg)|
 
