@@ -18,8 +18,9 @@ from .motion_detector import MotionDetector
 from .white_balancing import WhiteBalancing
 from .spin import Spin
 from .segmentation_tracker import SegmentationTracker
-from .object_detection import ObjectDetector
-from .bottle_detection import BottleDetector
+#from .object_detection import ObjectDetector
+#from .bottle_detection import BottleDetector
+from .canny_edges import CannyEdgeDetector
 
 ''' Link Algorithms to keys '''
 algorithms = dict()
@@ -30,5 +31,6 @@ algorithms["3"] = MotionDetector
 algorithms["4"] = WhiteBalancing
 algorithms["5"] = Spin
 algorithms["6"] = SegmentationTracker
-algorithms["7"] = ObjectDetector
-algorithms["8"] = BottleDetector
+#algorithms["7"] = ObjectDetector
+#algorithms["8"] = BottleDetector
+algorithms["9"] = CannyEdgeDetector
