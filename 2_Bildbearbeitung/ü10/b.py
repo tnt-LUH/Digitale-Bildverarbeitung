@@ -8,7 +8,7 @@ img = img.astype(float)
 img = 50 + (105 * img / 255)
 cv2.imshow("Original", img.astype(np.uint8))
 
-# Implement AHE
+# Implement CLAHE
 
 
 cv2.waitKey(0)
