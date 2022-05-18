@@ -22,13 +22,13 @@ Die Kreisfrequenz der Abtastung <img src="https://latex.codecogs.com/svg.image?\
  muss demnach 
 
 <p align="center">
-<img src="https://latex.codecogs.com/svg.image?\Omega_T > \frac{\Omega_g}{2}" title="\sum_1" />
+<img src="https://latex.codecogs.com/svg.image?\Omega_T>\frac{\Omega_g}{2}" title="\sum_1" />
 <p>
 
 beziehungsweise die Abtastfrequenz  <img src="https://latex.codecogs.com/svg.image?f_T" title="\sum_1" /> muss
 
 <p align="center">
-<img src="https://latex.codecogs.com/svg.image?f_T > \frac{f_g}{2}" title="\sum_1" />
+<img src="https://latex.codecogs.com/svg.image?f_T>\frac{f_g}{2}" title="\sum_1" />
 <p>
 
 mit der maximalen Kreisfrequenz <img src="https://latex.codecogs.com/svg.image?\Omega_g" title="\sum_1" /> bzw.
