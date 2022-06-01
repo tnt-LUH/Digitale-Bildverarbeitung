@@ -13,6 +13,12 @@ NORMAL = np.fft.fftshift(np.fft.fft2(normal))
 NORMAL_magnitude = np.abs(NORMAL)
 NORMAL_angle = np.angle(NORMAL)
 
+''' Bild anzeigen '''
+cv2.imshow("raster", raster)
+cv2.imshow("normal", normal)
+cv2.imshow("RASTER_magnitude", 255 * RASTER_magnitude / np.max(RASTER_magnitude))
+cv2.imshow("NORMAL_magnitude", 255 * NORMAL_magnitude / np.max(NORMAL_magnitude))
+
 ''' Maskieren '''
 centroids = [
     [85, 85],
@@ -33,11 +39,7 @@ FILTERED_magnitude = np.abs(RASTER)
 ''' Inverse fft '''
 filtered = np.fft.ifft2(np.fft.ifftshift(RASTER)).astype(np.uint8)
 
-''' Bild anzeigen '''
-cv2.imshow("raster", raster)
-cv2.imshow("normal", normal)
-cv2.imshow("RASTER_magnitude", 255 * RASTER_magnitude / np.max(RASTER_magnitude))
-cv2.imshow("NORMAL_magnitude", 255 * NORMAL_magnitude / np.max(NORMAL_magnitude))
+''' Lösung anzeigen '''
 cv2.imshow("FILTERED_magnitude", 255 * FILTERED_magnitude / np.max(FILTERED_magnitude))
 cv2.imshow("filtered", filtered)
 
