@@ -25,7 +25,7 @@ edge = [
 ]
 edge = np.asarray(edge)
 edge_conv = np.flip(edge)
-I_in = cv2.filter2D(I_in, cv2.CV_64F, edge, borderType=cv2.BORDER_REPLICATE)
+I_in = cv2.filter2D(I_in, cv2.CV_64F, edge_conv, borderType=cv2.BORDER_REPLICATE)
 print("Operation 1: Kantenfilter")
 print(I_in)
 print()

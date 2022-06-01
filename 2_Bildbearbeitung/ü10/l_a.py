@@ -19,6 +19,7 @@ for x in range(width):
         cum_hist = np.cumsum(hist)
         v = round(img[y, x])
         new_image[y, x] = v * cum_hist[v] / cum_hist[255]
+cv2.imshow("CLAHE", new_image.astype(np.uint8))
 
 cv2.waitKey(0)
 

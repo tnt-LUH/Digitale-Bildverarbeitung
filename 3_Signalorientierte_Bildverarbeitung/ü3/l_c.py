@@ -11,9 +11,8 @@ ANGLE = np.angle(IMG)
 
 ''' Filter out frequencies '''
 print("Number of frequencies:", MAGNITUDE.shape)
-frequencies_to_delete = 510
-MAGNITUDE[:-frequencies_to_delete, :] = 0
-MAGNITUDE[:, :-frequencies_to_delete] = 0
+frequencies_to_delete = 25
+MAGNITUDE[:-frequencies_to_delete, :-frequencies_to_delete] = 0
 
 
 ''' IFFT '''
