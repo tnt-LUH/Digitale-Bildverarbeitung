@@ -17,6 +17,15 @@ In der folgenden Tabelle sind beide Repräsentationen dargestellt:
 | --- | --- |
 |![./data/add.png](./data/add.png) | ![./data/add.png](./data/sub.png)|
 
+Bei der Additiven Farbmischung wird eine Farbe durch das Hinzufügen von Farbe zum Komplementär Schwarz erreicht. 
+Auf dem Rechner entsprechen daher höhere Werte in einem Farbkanal einer stärkeren Präsenz der Farbe im resultierenden
+Pixel.
+
+Bei der Subtraktiven Farbmischung wird eine Farbe durch das Abziehen von Farbe zum Komplementär Weiß erreicht. 
+Auf dem Rechner entsprechen daher höhere Werte in einem Farbkanal einer geringeren Präsenz der Farbe im resultierenden
+Pixel.
+
+
 ## Aufgabe a)
 
 In der Datei [a.py](a.py) ist ein leeres Bild vordefiniert. Ergänzen Sie die Farben, um das Bild zu vervollständigen.
