@@ -8,7 +8,7 @@ Betrachten Sie das folgende Binärbild:
 Es soll der Abstand zwischen dem obersten Pixel an der Position (0,1) und dem 
 Pixel an der Stelle (5, 4) berechnet werden.
 
-## a) Akkumulator
+## a) 
 
 Berechnen Sie 
  - die City-Block Distanz
