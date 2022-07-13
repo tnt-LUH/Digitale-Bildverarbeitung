@@ -6,6 +6,6 @@ N4 Nachbarschadt | N8 Nachbarschaft
 
 
 
-Der in der Vorlesung spezifizierte Algorithmus ist nicht deterministisch. Damit der Alsgorithmus deterministisch ist, muss er genauer spezifiziert und stets eingehalten werden:
+Der in der Vorlesung beschriebene Algorithmus ist nicht deterministisch. Damit der Alsgorithmus deterministisch ist, muss er genauer spezifiziert und stets eingehalten werden:
 - Reihenfolge in der die Nachbarschaft abgelaufen wird
 - Werden Pixel die nicht zur Region gehören nur einmal oder mehrmals getestet?
