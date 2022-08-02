@@ -8,7 +8,7 @@ In dem Skript [a.py](a.py) wird das Bild von Lena eingeladen.
 Das Bild soll in die hohen tiefen Frequenzen mithilfe der Haar-Transformation zerlegt werden.
 Erstellen Sie dafür eine Haar-Koeffizientnmatrix der Größe 512x512 mit der Berechnungsvorschrift 
 
-<img src="https://latex.codecogs.com/svg.image?H^{(N)}_{ij}:=\begin{cases}\frac{1}{\sqrt{2}},&space;&&space;\text{if}\&space;i\leq&space;\frac{N}{2},&space;j\in&space;\{2i-1,&space;\}&space;&space;\\\frac{1}{\sqrt{2}},&space;&&space;\text{if}\&space;i>\frac{N}{2},&space;j=2(i-\frac{N}{2})-1&space;\\-\frac{1}{\sqrt{2}},&space;&&space;\text{if}\&space;i>\frac{N}{2},&space;j=2(i-\frac{N}{2})\end{cases}" title="" />
+<img src="https://latex.codecogs.com/svg.image?H^{(N)}_{ij}:=\begin{cases}\frac{1}{\sqrt{2}},&space;&&space;\text{if}\&space;i\leq&space;\frac{N}{2},&space;j\in&space;\{2i-1,2i&space;\}&space;&space;\\\frac{1}{\sqrt{2}},&space;&&space;\text{if}\&space;i>\frac{N}{2},&space;j=2(i-\frac{N}{2})-1&space;\\-\frac{1}{\sqrt{2}},&space;&&space;\text{if}\&space;i>\frac{N}{2},&space;j=2(i-\frac{N}{2})\end{cases}" title="" />
 
 und wenden Sie diese auf das Bild mithilfe von
 
