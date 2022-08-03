@@ -23,7 +23,7 @@ for x in range(width):
         hist = hist + round(sum_of_higher_values / 256)
         cum_hist = np.cumsum(hist)
         v = round(img[y, x])
-        new_image[y, x] = v * cum_hist[v] / cum_hist[255]
+        new_image[y, x] = 255 * cum_hist[v] / cum_hist[255]
 
 cv2.imshow("CLAHE", new_image.astype(np.uint8))
 

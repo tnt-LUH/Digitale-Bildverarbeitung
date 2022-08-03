@@ -18,7 +18,7 @@ for x in range(width):
         hist, values = np.histogram(img[y1:y2, x1:x2], bins=256, range=(0, 256))
         cum_hist = np.cumsum(hist)
         v = round(img[y, x])
-        new_image[y, x] = v * cum_hist[v] / cum_hist[255]
+        new_image[y, x] = 255 * cum_hist[v] / cum_hist[255]
 cv2.imshow("CLAHE", new_image.astype(np.uint8))
 
 cv2.waitKey(0)
