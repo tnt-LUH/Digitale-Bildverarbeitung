@@ -3,7 +3,7 @@ import numpy as np
 
 ''' Öffnen einer Kamera und Initialisierung von Variablen '''
 cap = cv2.VideoCapture(0)
-mode = "CHROMINANZ"  # CHROMINANZ, LUMINANZ
+mode = "RGB"  # CHROMINANZ, LUMINANZ
 window_name = "Ergebnis mit %s" % mode
 
 ''' Auslesen, Modifizieren und Ausgeben von Bildern'''
@@ -17,6 +17,8 @@ while True:
         # Normalisieren: p_r / (p_r + p_g + p_b), p_g / (p_r + p_g + p_b), p_b / (p_r + p_g + p_b)
         pixel_sum = np.sum(frame, keepdims=True, axis=2)
         frame = frame.astype(np.float32) / pixel_sum
+    elif mode == "RGB":
+        pass
     else:
         raise Exception("FALSCHER MODE!!!")
 
