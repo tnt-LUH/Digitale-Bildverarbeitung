@@ -74,7 +74,7 @@ print(F)
 '''
 h) Ändere alle Werte aus f) aus der zweiten Zeile zu dem Wert 4.5 
 '''
-F[1] = 2.5
+F[1] = 4.5
 print("H")
 print(F)
 
