@@ -1,6 +1,6 @@
 # Einführung
 In diesem Kapitel werden Sie mit den nötigen Werkzeugen ausgestattet, um diesen Kurs zu meistern.
-Dafür wird ihnen gezeigt, wie Sie die dieses Repository korrekt auf Ihren Rechner installieren. 
+Dafür wird ihnen gezeigt, wie Sie dieses Repository korrekt auf Ihren Rechner installieren. 
 Sie werden grundlegend in die Programmiersprache Python und die Programmierumgebung PyCharm eingeführt. Arbeiten Sie die
 folgenden Abschnitte in der gegebenen Reihenfolge durch.
 
@@ -84,7 +84,7 @@ python -m pip install --upgrade pip
 python -m pip install pipenv
 pipenv install --skip-lock
 ```
-Die Ausfürhung kann einen Moment dauern! Verwenden Sie folgenden Befehl um die korrekte Installation zu testen:
+Die Ausführung kann einen Moment dauern! Verwenden Sie folgenden Befehl um die korrekte Installation zu testen:
 
 ```bash
 python 0_Einführung/test_installation.py
