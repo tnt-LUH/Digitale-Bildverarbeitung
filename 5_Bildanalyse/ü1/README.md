@@ -27,7 +27,7 @@ Implementieren sie in der Datei [a.py](a.py) die folgenden Schritte, um die Bewe
     - Addition/Subtraktion einer Konstanten
     - Multiplikation/Division mit einer Konstanten
  4. Stellen Sie das Differenzbild mithilfe von `cv2.imshow()` dar
- 5 Setzen Sie alle Pixel mit Intensität kleiner 0.5 auf 0 und zeigen Sie das resultierende Bild an
+ 5. Setzen Sie alle Pixel mit Intensität kleiner 0.5 auf 0 und zeigen Sie das resultierende Bild an
   
 Die Musterlösung findet sich unter [l_a.py](l_a.py).
 
