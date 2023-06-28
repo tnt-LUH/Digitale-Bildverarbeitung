@@ -12,7 +12,7 @@ diskreten Kosinus- bzw. Fouriertransformation folgende Schritte durchgeführt we
 - Iterieren Sie Blockweise über das Bild mithilfe zweier for-Schleifen und einer Blockgröße von 8x8 Pixel
 - Verwenden Sie `np.fft.fft2()` um den Block in den Frequenzraum zu transformieren
 - Entfernen Sie die *n* hochfrequentesten Koefizienten mit `n = 8 * 8 * rate`
-- Transformieren Sie den Block zurück in den Ortsraum mit `np.ddf.ifft2` 
+- Transformieren Sie den Block zurück in den Ortsraum mit `np.fft.ifft2` 
 
 Wie stark wirkt sich der Parameter `rate` auf die Interpretierbarkeit des Bildes für den Menschen aus?
 

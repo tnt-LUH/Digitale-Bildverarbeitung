@@ -10,7 +10,7 @@ import numpy as np
 import datetime
 
 DEFAULT_CAMERA = 0
-DEFAULT_MODE = "virtual_cam"  # "screen", "virtual_cam"
+DEFAULT_MODE = "screen"  # "screen", "virtual_cam"
 DEFAULT_VIDEO = "DEFAULT VIDEO TO SHOW"
 WINDOW_NAME = "Output"
 FRAMERATE = 30
