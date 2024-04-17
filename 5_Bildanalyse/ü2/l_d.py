@@ -22,7 +22,7 @@ s = np.asarray([
 
 
 I_new = cv2.erode(I, s)
-I_new = cv2.dilate(I_new, np.transpose(s)) # OpenCV uses a convolution for dilate()  --> transpose filter kernel
+I_new = cv2.dilate(I_new, s)
 
 # Resize image
 I = np.repeat(I, 50, axis=1)

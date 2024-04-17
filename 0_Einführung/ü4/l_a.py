@@ -17,7 +17,7 @@ res = np.matmul(M, np.transpose(vr, axes=(1, 0)))
 print("(4) res:", res)
 
 res = res / 100
-res = np.round(res)
+res = np.round(res)  # np.floor() np.ceil()
 print("(5) res:", res)
 
 maximum = np.max(res)

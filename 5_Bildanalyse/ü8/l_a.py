@@ -23,8 +23,8 @@ obj2 = np.asarray([
     [0, 0, 0, 0, 0, 0, 0, 0],
 ])
 
-obj1 = np.ones((5, 5))
-obj2 = np.ones((5, 5))
+# obj1 = np.ones((5, 5))
+# obj2 = np.ones((5, 5))
 
 union = np.maximum(obj1, obj2)
 
