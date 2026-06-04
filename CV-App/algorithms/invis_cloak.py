@@ -10,7 +10,7 @@ class InvisCloak (Algorithm):
 
     """ init function """
     def __init__(self):
-        pass
+        self.image_stack = list()
 
     """ Processes the input image"""
     def process(self, img):
@@ -64,7 +64,11 @@ class InvisCloak (Algorithm):
             Hier steht Ihr Code zu Aufgabe 2.1.1 (Rauschunterdrückung)
             - Implementierung Mittelwertbildung über N Frames
         """
-
+        # Füge Bilder zum Image Stack hinzu, sodass maximal max_image_stack_length Bilder dort gespeichert sind
+        max_image_stack_length = 10
+        self.image_stack.append(img)
+        if len(self.image_stack) > max_image_stack_length:
+            self.image_stack = self.image_stack[-max_image_stack_length:]
 
         return img
 
