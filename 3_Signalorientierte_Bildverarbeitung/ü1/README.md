@@ -6,7 +6,7 @@ für den Menschen betrachtet. Die Reduzierung der Informationen kann für eine K
 Wenden Sie die folgenden Aufgaben auf die Bilder **data/yellowlilly.jpg** und **data/cameraman.png** an. 
 
 ## Aufgabe a) Entfernen hochfrequenter Frequenzen
-Implementieren sie die beiden Funktionen *remove_dct(img, rate)* und *remove_dft(img, rate)*, wobei mit der 
+Implementieren sie die Funktion und *remove_dft(img, rate)*, wobei mit der 
 diskreten Kosinus- bzw. Fouriertransformation folgende Schritte durchgeführt werden sollen:
 
 - Iterieren Sie Blockweise über das Bild mithilfe zweier for-Schleifen und einer Blockgröße von 8x8 Pixel
