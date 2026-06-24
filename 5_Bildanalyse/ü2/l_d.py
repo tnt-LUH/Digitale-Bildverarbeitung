@@ -21,8 +21,8 @@ s = np.asarray([
 ], dtype=np.uint8)
 
 
-I_new = cv2.erode(I, s)
-I_new = cv2.dilate(I_new, s)
+I_new = cv2.dilate(I, s)
+I_new = cv2.erode(I_new, s)
 
 # Resize image
 I = np.repeat(I, 50, axis=1)
