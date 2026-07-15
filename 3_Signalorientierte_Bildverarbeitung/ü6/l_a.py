@@ -46,14 +46,17 @@ print(H[0:5, 0:5])
 print(H[256:261, 0:5])
 
 ''' Filter with HxI'''
-haar = np.matmul(H, normal)
+haar1 = np.matmul(H, normal)
+haar2 = np.matmul(haar1, np.transpose(H))
 
 ''' Invert Filter '''
-haar_inv = np.matmul(np.transpose(H), haar)
+haar_inv = np.matmul(np.transpose(H), haar2)
+haar_inv = np.matmul(haar_inv, H)
 
 ''' Show images '''
 cv2.imshow("normal", normal)
-cv2.imshow("haar", haar / 255)
+cv2.imshow("haar1", haar1 / 255)
+cv2.imshow("haar2", haar2 / 255)
 cv2.imshow("haar_inv", haar_inv / 255)
 print("Difference:", np.sum(np.abs(normal-haar_inv)))
 
